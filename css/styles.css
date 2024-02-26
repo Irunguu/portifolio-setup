@@ -13,12 +13,12 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(43, 86%, 17%);
+  --clr-primary-1: hsl(246, 86%, 17%);
   --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-3: hsl(241, 83%, 62%);
   --clr-primary-4: hsl(42, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-5: hsl(241, 96%, 64%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 90%, 76%);
@@ -132,7 +132,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -162,9 +162,9 @@ p {
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
+  
   }
 }
-/* added during recording */
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -218,7 +218,7 @@ Navbar
 }
 @media screen and (min-width: 768px) {
   .nav {
-    background: var(--clr-primary-10);
+    background: var(--clr-grey-10);
   }
   .nav-btn {
     display: none;
@@ -349,7 +349,7 @@ Hero
   display: none;
 }
 .hero {
-  background: var(--clr-primary-10);
+  background: var(--clr-grey-10);
 }
 .hero-center {
   min-height: calc(100vh - 5rem);
@@ -387,9 +387,7 @@ Hero
   }
 }
 .hero-photo {
-  max-width: 25rem;
-  max-height: 30rem;
-  -o-object-fit: cover;
+height: 25rem;
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
@@ -458,7 +456,7 @@ Services
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-3);
   color: var(--clr-white);
 }
 .service:hover p {
@@ -632,40 +630,30 @@ Connect
   max-width: 30rem;
 }
 .video-banner {
-  background: var(--clr-primary-10);
+  background: var(--clr-grey-9);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
-
+  border-radius: var(--radius);
   -webkit-clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
+    60% 75%,
+    50% 100%,
+    40% 75%,
     0% 75%
   );
   clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
+    60% 75%,y
+    50% 100%,y
+    40% 75%,y
     0% 75%
   );
 }
-.connect {
-  -webkit-clip-path: polygon(
-    50% 0%,
-    100% 10%,
-    100% 90%,
-    50% 100%,
-    0 90%,
-    0 10%
-  );
-  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
-}
+
 /*
 =============== 
 Skills
@@ -681,7 +669,7 @@ Skills
   }
 }
 .skills {
-  background: var(--clr-primary-9);
+  background: var(--clr-grey-10);
 }
 .skills h3 {
   margin: 1.5rem 0;
@@ -708,27 +696,29 @@ Skills
   left: 0;
   background: var(--clr-primary-5);
   height: 100%;
-  width: 50%;
+  width: 90%;
   border-radius: var(--radius);
 }
-.value-70 {
-  width: 70%;
+.value-90 {
+  width: 90%;
 }
 .value-80 {
   width: 80%;
 }
+.value-85 {
+  width: 85%;}
 .skill-text {
   position: absolute;
   top: -2rem;
-  left: 50%;
+  left: 80%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.skill-text-70 {
-  left: 70%;
-}
 .skill-text-80 {
   left: 80%;
+}
+.skill-text-85 {
+  left: 85%;
 }
 /*
 =============== 
