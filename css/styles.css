@@ -15,10 +15,10 @@ Variables
   /* dark shades of primary color*/
   --clr-primary-1: hsl(246, 86%, 17%);
   --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(241, 83%, 62%);
+  --clr-primary-3: hsl(216, 73%, 68%);
   --clr-primary-4: hsl(42, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(241, 96%, 64%);
+  --clr-primary-5: hsl(216, 71%, 49%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 90%, 76%);
@@ -162,7 +162,6 @@ p {
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
-  
   }
 }
 .underline {
@@ -387,7 +386,7 @@ Hero
   }
 }
 .hero-photo {
-height: 25rem;
+  height: 25rem;
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
@@ -647,10 +646,10 @@ Connect
     0% 0%,
     100% 0%,
     100% 75%,
-    60% 75%,y
-    50% 100%,y
-    40% 75%,y
-    0% 75%
+    60% 75%,
+    y 50% 100%,
+    y 40% 75%,
+    y 0% 75%
   );
 }
 
@@ -706,7 +705,8 @@ Skills
   width: 80%;
 }
 .value-85 {
-  width: 85%;}
+  width: 85%;
+}
 .skill-text {
   position: absolute;
   top: -2rem;
